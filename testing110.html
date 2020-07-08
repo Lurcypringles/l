@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+
+  <title>Magic 8 Ball and Cats</title>
+  <script type="text/javascript">
+
+    var answers = ["It is certain", "It is decidedly so", "Without a doubt", "Yes - definitely","You may rely on it","As I see it, yes", "Most likely",  "Outlook good", "Yes", "Signs point to yes", "Don't count on it",  "My reply is no","My sources say no", "Outlook not so good","Very doubtful", "Reply hazy, try again",  "Ask again later", "Better not tell you now","Cannot predict now","Concentrate and ask again"];
+
+    window.onload = function() {
+
+       var eight = document.getElementById("eight");
+
+       var answer = document.getElementById("answer");
+
+       var eightball = document.getElementById("eight-ball");
+
+       var question = document.getElementById("question");
+
+       
+
+       eightball.addEventListener("click", function() {
+
+         if (question.value.length < 5) {
+
+           alert('Enter a question!');
+
+         } else {
+
+           eight.innerText = "";
+
+           var num = Math.floor(Math.random() * Math.floor(answers.length));
+
+           answer.innerText = answers[num];
+
+         }
+
+       });
+
+    };
+
+  </script>
+
+  
+
+  <style type="text/css">
+
+    h1 { font-weight: 100; font-size: 2.5em;}
+
+    
+
+    #content { 
+
+     width: 600px; 
+
+     margin: 0 auto; 
+
+     margin-top: 50px; 
+
+     text-align: center; 
+
+     font-family: 'Helvetica Neue', arial; 
+
+     font-weight: 100;
+
+   }
+
+    
+
+    div.eight-ball {
+
+      background-color: black;
+
+      border: 1px solid black;
+
+      border-radius: 50%;
+
+      width: 300px;
+
+      height: 300px;
+
+      margin: 0 auto;
+
+      margin-bottom: 30px;
+
+      margin-top: 30px;
+
+    }
+
+    
+
+    div.answer {
+
+      background-color: #333;
+
+      border: 1px solid #333;
+
+      border-radius: 50%;
+
+      width: 50%;
+
+      height: 50%;
+
+      margin: 25% auto;
+
+    }
+
+    
+
+    p#eight {
+
+      font-size: 5em;
+
+      margin: 20% auto;
+
+      color: white;
+
+    }
+
+    
+
+    p#answer {
+
+      padding: 23px;
+
+      color: lightblue;
+
+      letter-spacing: 2px;
+
+      font-size:18px;
+
+    }
+
+    
+
+    #question {
+
+      margin: 20px;
+
+      padding: 10px;
+
+      width: 400px;
+
+      font-size:22px;
+
+    }
+
+    
+
+    #info {
+
+      font-size: 22px;
+
+    }
+    h2 {
+        color: rgb(241, 25, 213);
+    }  
+    
+    body {
+        background-color:  rgb(19, 222, 236);
+    }
+
+    
+
+  </style>
+
+  
+
+ </head>
+
+ <body>
+
+  <div id="content">
+
+<h1 style = "font-family: fantasy;font-size:30px;color: rgb(241, 25, 213);">All about cats</h1>
+
+<img src="http://pngimg.com/uploads/cat/cat_PNG50480.png"alt="Cats" width="203"> 
+
+<h2 style = "font-family: fantasy;font-size:30px;color: rgb(241, 25, 213);">Basic info</h2>
+
+ 
+<p style = "font-family: fantasy;font-size:30px;">Cats are creatures with long fluffy tails, pointy ears, and 4 legs.</p>
+
+<p style = "font-family: fantasy;font-size:30px;">Now old Mr. Johnson had some troubles of his own,<br>
+    He had a scarlet cat that just wouldn’t leave his home,<br>
+    He tried and he tried to give the cat away,<br>
+    He gave it to a man going far, far away.<br>
+    But the cat came back the very next day,<br>
+    The cat came back; they thought he was a goner<br>
+    The cat came back, he just wouldn’t stay away.<br></p>
+
+
+<h3 style = "font-family: fantasy;font-size:30px;color: rgb(241, 25, 213);">Why cats make great pets</h3>
+
+<ul style = "font-family: fantasy;font-size:30px;">
+    <li>They're furry </li>
+    <li>They can basically take care of themselves.</li>
+    <li>Are super adorable</li>
+    <li>Easy to train</li>
+    <li>Cost less than doggos</li>
+    <li>Have a LONG life (actually 9 long lives)</li>
+    <li>Get rid of your mice</li>
+</ul>
+
+<h3 style = "font-family: fantasy;font-size:30px;color: rgb(241, 25, 213);">Top 3 most famous cats</h3>
+<ol style = "font-family: fantasy;font-size:30px;">
+    <li><a href="https://www.garfield.com/">Garfield</a><img src="http://img1.wikia.nocookie.net/__cb20120709141238/p__/protagonist/images/0/09/Garfield.png"alt="Garfield" width="203"></li>
+    <li><a href="http://heathcliff.com/">Heathcliff</a><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e2519619-abd5-4460-96dd-9abf7a322e96/d61sc6p-853fa41e-84d6-44f5-86f2-a028982f5d7c.png/v1/fill/w_863,h_926,q_75,strp/my_first_vector_of_heathcliff__by_flutterflyraptor-d61sc6p.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9lMjUxOTYxOS1hYmQ1LTQ0NjAtOTZkZC05YWJmN2EzMjJlOTYvZDYxc2M2cC04NTNmYTQxZS04NGQ2LTQ0ZjUtODZmMi1hMDI4OTgyZjVkN2MucG5nIiwid2lkdGgiOiI8PTg2MyIsImhlaWdodCI6Ijw9OTI2In1dXX0.-SEF7Gkuko25s7a09cF5RLNXm-4ZoUwrY-mxobmC6N4
+        "alt="Heathcliff" width="203"></li>
+    <li><a href="http://felixthecat.com/nonflash.html">Felix Da Cat</a><img src="https://vignette.wikia.nocookie.net/p__/images/e/e8/Felix_The_Cat.png/revision/latest?cb=20171228095408&path-prefix=protagonist"alt="Felix The Cat"width="203">
+    </li>
+</ol>
+<h3 style = "font-family: fantasy;font-size:30px;color: rgb(241, 25, 213);">Most Popular Cat Breeds (Top 5)</h3>
+<ol style="font-family: fantasy;font-size:30px;">
+    <li><a href="https://en.wikipedia.org/wiki/Bobcat">Bob Cats</a><img scr="https://www.maxxcat.com/images/bobcat-connector.png"width="203"></li>
+    <li><a href="https://en.wikipedia.org/wiki/Persian_cat">Persian Cat</a><img scr="https://mhsmirador.com/wp-content/uploads/2013/12/persian-cat.png"width="203"></li>
+    <li><a href="https://en.wikipedia.org/wiki/Maine_Coon">Maine Coon</a><img scr="https://www.sloppykisscards.com/images/byo/breeds/cat/maine.png"width="203"></li>
+    <li><a href="https://en.wikipedia.org/wiki/Ragdoll">Ragdoll Cat</a><img src="http://4.bp.blogspot.com/-iZHutM3STzc/T-xa8r1FsQI/AAAAAAAABEE/0HHeGcJ7bhc/s1600/ragdoll-cat4.jpeg"alt="wow that looks just like a ragdoll!"width="203"></li>
+    <li><a href="https://en.wikipedia.org/wiki/British_Shorthair">British Shorthair Cat</a><img scr="https://marketplace.canva.com/MAASsT3lU1Q/1/thumbnail_large/canva-british-shorthair-kitten-looking-up-and-playing,-9-weeks-old-MAASsT3lU1Q.png"width="203"></li>
+</ol>
+
+    <h1>Random Magic 8 Ball Thingy</h1>
+
+    <p id="info">Ask a question and press the Magic 8 Ball</p>
+
+    <input type="text" id="question" />
+
+    <div id="eight-ball" class="eight-ball">
+
+      <div class="answer">
+
+        <p id="eight">8</p>
+
+        <p id="answer"></p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+ </body>
+
+</html>
